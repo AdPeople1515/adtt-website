@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://adttprojects.com/sitemap.xml
