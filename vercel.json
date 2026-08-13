@@ -1,0 +1,34 @@
+{
+  "redirects": [
+    { "source": "/signage", "destination": "/signage-singapore", "permanent": true },
+    { "source": "/signage/", "destination": "/signage-singapore", "permanent": true },
+
+    { "source": "/smart-glass-smart-film-singapore", "destination": "/smart-glass-singapore", "permanent": true },
+    { "source": "/smart-glass-smart-film-singapore/", "destination": "/smart-glass-singapore", "permanent": true },
+
+    { "source": "/wall-window-film-installation", "destination": "/interior-film-singapore", "permanent": true },
+    { "source": "/wall-window-film-installation/", "destination": "/interior-film-singapore", "permanent": true },
+
+    { "source": "/decorative-glass-film", "destination": "/interior-film-singapore", "permanent": true },
+    { "source": "/decorative-glass-film/", "destination": "/interior-film-singapore", "permanent": true },
+
+    { "source": "/premium-interior-film-supplier", "destination": "/interior-film-singapore", "permanent": true },
+    { "source": "/premium-interior-film-supplier/", "destination": "/interior-film-singapore", "permanent": true },
+
+    { "source": "/decorative-adhesive-leather-film", "destination": "/interior-film-singapore", "permanent": true },
+    { "source": "/decorative-adhesive-leather-film/", "destination": "/interior-film-singapore", "permanent": true },
+
+    { "source": "/about-us", "destination": "/", "permanent": true },
+    { "source": "/about-us/", "destination": "/", "permanent": true },
+
+    { "source": "/contact-2", "destination": "/", "permanent": true },
+    { "source": "/contact-2/", "destination": "/", "permanent": true },
+
+    { "source": "/form", "destination": "/", "permanent": true },
+    { "source": "/form/", "destination": "/", "permanent": true },
+
+    { "source": "/product/:path*", "destination": "/", "permanent": true },
+    { "source": "/shop", "destination": "/", "permanent": true },
+    { "source": "/shop/", "destination": "/", "permanent": true }
+  ]
+}
