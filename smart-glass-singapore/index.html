@@ -108,7 +108,9 @@ a{text-decoration:none;}
   .hero{grid-template-columns:1fr;padding-bottom:32px;}
   .section{padding:48px 24px;}
   .mech-row{grid-template-columns:1fr;}
-  .nav-links{display:none;}
+  .nav-links{gap:0;}
+  .nav-links li:not(.nav-home){display:none;}
+  .nav-links .nav-home a{color:var(--gold)!important;font-size:14px;}
 }
 </style>
 </head>
@@ -116,7 +118,7 @@ a{text-decoration:none;}
 
 <header class="nav">
   <div class="nav-inner">
-    <div class="logo">
+    <a href="/" class="logo">
       <svg class="logo-mark" width="130" height="34" viewBox="0 0 130 34" xmlns="http://www.w3.org/2000/svg">
         <text x="0" y="16" font-family="'Plus Jakarta Sans',sans-serif" font-weight="800" font-size="17" fill="#FFFFFF" letter-spacing="0.5">AdTT Projects</text>
         <g fill="#FFFFFF">
@@ -131,14 +133,14 @@ a{text-decoration:none;}
           <rect x="112" y="24" width="10" height="4" rx="1"/>
         </g>
       </svg>
-    </div>
+    </a>
     <ul class="nav-links">
-      <li>Solutions</li><li>Packages</li><li>Our Process</li><li>Projects</li><li>FAQ</li><li>Contact</li>
+      <li class="nav-home"><a href="/" style="color:inherit;">Home</a></li><li><a href="/#solutions" style="color:inherit;">Solutions</a></li><li><a href="/#packages" style="color:inherit;">Packages</a></li><li><a href="/#process" style="color:inherit;">Our Process</a></li><li><a href="/#projects" style="color:inherit;">Projects</a></li><li><a href="/#faq" style="color:inherit;">FAQ</a></li><li><a href="/#contact" style="color:inherit;">Contact</a></li>
     </ul>
   </div>
 </header>
 
-<div class="breadcrumb">Home / <span class="current">Smart Glass Singapore</span></div>
+<div class="breadcrumb"><a href="/" style="color:inherit;">Home</a> / <span class="current">Smart Glass Singapore</span></div>
 
 <section class="hero">
   <div>
