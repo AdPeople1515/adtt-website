@@ -95,6 +95,58 @@ a{text-decoration:none;}
 
 /* CTA */
 .cta{background:var(--navy-card);border-top:1px solid var(--navy-border);border-bottom:1px solid var(--navy-border);padding:72px 32px;text-align:center;}
+.cta-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin:32px auto 0;max-width:760px;}
+.cta-btn{display:flex;flex-direction:column;align-items:center;gap:2px;min-width:200px;flex:1;padding:18px 24px;border-radius:10px;border:1px solid var(--navy-border);background:rgba(255,255,255,0.03);transition:transform .2s ease,border-color .2s ease;}
+.cta-btn:hover{transform:translateY(-3px);border-color:rgba(232,201,106,0.6);}
+.cta-btn-primary{background:var(--gold);border-color:var(--gold);}
+.cta-btn-label{font-family:var(--font-head);font-weight:800;font-size:16px;color:var(--white);}
+.cta-btn-primary .cta-btn-label{color:var(--navy-dark);}
+.cta-btn-sub{font-size:13px;color:var(--muted);}
+.cta-btn-primary .cta-btn-sub{color:rgba(11,23,48,0.7);}
+.cta-reassure{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;margin-top:28px;font-size:14px;color:var(--muted);}
+
+/* WHY ADTT */
+.why{max-width:1100px;margin:0 auto;padding:64px 32px;text-align:center;}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:36px;text-align:left;}
+.why-item{background:var(--navy-card);border:1px solid var(--navy-border);border-top:2px solid var(--gold);border-radius:10px;padding:26px 24px;}
+.why-num{font-family:var(--font-head);font-weight:800;font-size:20px;color:var(--gold);}
+.why-item h3{font-family:var(--font-head);font-weight:700;font-size:17px;margin:10px 0 8px;}
+.why-item p{font-size:14.5px;line-height:1.6;color:var(--muted);margin:0;}
+
+/* FOOTER */
+.footer{background:var(--navy-dark);border-top:1px solid var(--navy-border);padding:52px 32px 0;}
+.footer-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1.4fr;gap:40px;}
+.footer-brand .footer-tag{color:var(--muted);font-size:14px;line-height:1.6;margin:14px 0 0;max-width:280px;}
+.footer-col .footer-head{font-family:var(--font-head);font-weight:700;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:var(--white);margin:0 0 14px;}
+.footer-col a{display:block;color:var(--muted);font-size:14px;margin-bottom:10px;transition:color .2s ease;}
+.footer-col a:hover{color:var(--gold);}
+.footer-addr{color:var(--muted);font-size:14px;line-height:1.6;margin:6px 0 0;}
+.footer-base{max-width:1100px;margin:44px auto 0;padding:20px 0 28px;border-top:1px solid var(--navy-border);color:rgba(255,255,255,0.4);font-size:13px;text-align:center;}
+
+@media(max-width:800px){
+  .why-grid{grid-template-columns:1fr;}
+  .footer-inner{grid-template-columns:1fr;gap:32px;}
+}
+
+/* CLOSING MOMENT */
+.closer{position:relative;max-width:1100px;margin:0 auto;padding:80px 32px 72px;text-align:center;overflow:hidden;}
+.closer-glow{position:absolute;top:20%;left:50%;transform:translateX(-50%);width:600px;height:400px;background:radial-gradient(circle,rgba(232,201,106,0.10) 0%,transparent 65%);pointer-events:none;}
+.closer h2{position:relative;font-family:var(--font-head);font-weight:800;font-size:clamp(28px,4vw,40px);margin:0 0 12px;}
+.closer-sub{position:relative;font-size:16px;line-height:1.7;color:var(--muted);max-width:520px;margin:0 auto 36px;}
+.glass-demo{position:relative;display:inline-block;width:100%;max-width:460px;}
+.glass-scene{position:relative;display:block;aspect-ratio:16/10;border-radius:14px;overflow:hidden;border:1px solid var(--navy-border);box-shadow:0 20px 50px rgba(0,0,0,0.35);}
+.glass-room{position:absolute;inset:0;background:linear-gradient(160deg,#24457f,#0f2050);}
+.room-window{position:absolute;top:14%;right:12%;width:34%;height:44%;border-radius:6px;background:linear-gradient(135deg,#cfe0ff,#8fb2e8);opacity:0.85;}
+.room-lamp{position:absolute;top:10%;left:20%;width:70px;height:70px;border-radius:50%;background:radial-gradient(circle,#fff6d8,rgba(255,246,216,0.1) 70%);}
+.room-desk{position:absolute;bottom:0;left:0;right:0;height:26%;background:linear-gradient(#2c4a82,#1a3160);}
+.glass-pane{position:absolute;inset:0;background:rgba(226,232,240,0.75);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);opacity:0;animation:frostCycle 5s ease-in-out infinite;}
+.glass-state{position:absolute;bottom:14px;left:14px;font-family:var(--font-head);font-size:11px;font-weight:700;letter-spacing:1.5px;padding:6px 12px;border-radius:4px;}
+.glass-state-clear{background:rgba(255,255,255,0.92);color:var(--navy-dark);animation:labelClear 5s ease-in-out infinite;}
+.glass-state-frosted{background:var(--gold);color:var(--navy-dark);opacity:0;animation:labelFrosted 5s ease-in-out infinite;}
+@keyframes frostCycle{0%,40%{opacity:0;}50%,90%{opacity:1;}100%{opacity:0;}}
+@keyframes labelClear{0%,40%{opacity:1;}50%,90%{opacity:0;}100%{opacity:1;}}
+@keyframes labelFrosted{0%,40%{opacity:0;}50%,90%{opacity:1;}100%{opacity:0;}}
+@media(prefers-reduced-motion:reduce){.glass-pane{animation:none;opacity:1;}.glass-state-clear{animation:none;opacity:0;}.glass-state-frosted{animation:none;opacity:1;}}
 .btn-gold{display:inline-block;background:var(--gold);color:var(--navy-dark);font-family:var(--font-head);font-weight:800;font-size:14px;padding:16px 32px;border-radius:8px;margin-top:20px;}
 
 
@@ -102,7 +154,7 @@ a{text-decoration:none;}
 .video-item{display:flex;flex-direction:column;align-items:center;}
 .video-item .phone-frame{margin:0;max-width:220px;}
 .video-label{font-family:var(--font-head);font-size:13px;font-weight:700;color:var(--gold);margin-top:14px;text-transform:uppercase;letter-spacing:0.5px;}
-.footer{padding:32px;text-align:center;color:var(--muted);font-size:13px;}
+.footer-legacy-removed{}
 
 @media(max-width:800px){
   .hero{grid-template-columns:1fr;padding-bottom:32px;}
@@ -308,16 +360,77 @@ a{text-decoration:none;}
   </div>
 </section>
 
-<section class="cta">
+<!-- WHY ADTT -->
+<section class="why">
+  <p class="section-eyebrow center">Why ADTT Projects</p>
+  <h2 class="center">Done right, done in-house.</h2>
+  <div class="why-grid">
+    <div class="why-item">
+      <span class="why-num">01</span>
+      <h3>We install, not just supply</h3>
+      <p>Our own team handles measurement, film, wiring and finishing — you deal with one contractor, not three.</p>
+    </div>
+    <div class="why-item">
+      <span class="why-num">02</span>
+      <h3>Fits your existing glass</h3>
+      <p>No tearing out windows or partitions. Film goes onto the glass you already have, with minimal disruption.</p>
+    </div>
+    <div class="why-item">
+      <span class="why-num">03</span>
+      <h3>Backed after install</h3>
+      <p>Every job comes with a 1-year workmanship warranty and a team you can actually reach afterwards.</p>
+    </div>
+  </div>
+</section>
 
+<!-- CTA -->
+<section class="cta">
   <p class="section-eyebrow center">Ready to Switch?</p>
-  <h2 class="center">Get a Free Site Survey</h2>
-  <p class="section-lede center">Every space is measured and quoted on-site — no fixed catalogue price.</p>
-  <a href="tel:+6588359191" class="btn-gold">Call +65 8835 9191</a>
+  <h2 class="center">Book a Free Consultation</h2>
+  <p class="section-lede center">Tell us your glass and space — we'll measure on-site and advise on the right film for you. No obligation, island-wide.</p>
+
+  <div class="cta-actions">
+    <a href="tel:+6588359191" class="cta-btn cta-btn-primary">
+      <span class="cta-btn-label">Call Us</span>
+      <span class="cta-btn-sub">+65 8835 9191</span>
+    </a>
+    <a href="https://wa.me/6588359191?text=Hi%20ADTT%20Projects%2C%20I%27d%20like%20a%20quote%20for%20smart%20film." target="_blank" rel="noopener" class="cta-btn">
+      <span class="cta-btn-label">WhatsApp</span>
+      <span class="cta-btn-sub">Chat with us</span>
+    </a>
+    <a href="mailto:contact@adttprojects.com?subject=Smart%20Film%20Enquiry" class="cta-btn">
+      <span class="cta-btn-label">Email</span>
+      <span class="cta-btn-sub">contact@adttprojects.com</span>
+    </a>
+  </div>
 </section>
 
 <footer class="footer">
-  <p>ADTT Projects Pte Ltd &middot; 22 Sin Ming Lane #06-76, Midview City, Singapore 573969</p>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <svg width="130" height="34" viewBox="0 0 130 34" xmlns="http://www.w3.org/2000/svg">
+        <text x="0" y="16" font-family="'Plus Jakarta Sans',sans-serif" font-weight="800" font-size="17" fill="#FFFFFF" letter-spacing="0.5">AdTT Projects</text>
+        <g fill="#FFFFFF">
+          <rect x="0" y="24" width="10" height="4" rx="1"/><rect x="14" y="28" width="10" height="4" rx="1"/><rect x="28" y="24" width="10" height="4" rx="1"/><rect x="42" y="28" width="10" height="4" rx="1"/><rect x="56" y="24" width="10" height="4" rx="1"/><rect x="70" y="28" width="10" height="4" rx="1"/><rect x="84" y="24" width="10" height="4" rx="1"/><rect x="98" y="28" width="10" height="4" rx="1"/><rect x="112" y="24" width="10" height="4" rx="1"/>
+        </g>
+      </svg>
+      <p class="footer-tag">Smart film, signage &amp; commercial fit-out — Singapore.</p>
+    </div>
+    <div class="footer-col">
+      <p class="footer-head">Explore</p>
+      <a href="/">Home</a>
+      <a href="/#packages">Packages</a>
+      <a href="/#projects">Projects</a>
+      <a href="/#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <p class="footer-head">Get in touch</p>
+      <a href="tel:+6588359191">+65 8835 9191</a>
+      <a href="mailto:contact@adttprojects.com">contact@adttprojects.com</a>
+      <p class="footer-addr">Make an appointment today —<br>we come to you, island-wide.</p>
+    </div>
+  </div>
+  <div class="footer-base">© 2026 ADTT Projects Pte Ltd. All rights reserved.</div>
 </footer>
 
 </body>
