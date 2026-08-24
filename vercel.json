@@ -18,9 +18,6 @@
     { "source": "/decorative-adhesive-leather-film", "destination": "/interior-film-singapore", "permanent": true },
     { "source": "/decorative-adhesive-leather-film/", "destination": "/interior-film-singapore", "permanent": true },
 
-    { "source": "/about-us", "destination": "/", "permanent": true },
-    { "source": "/about-us/", "destination": "/", "permanent": true },
-
     { "source": "/contact-2", "destination": "/", "permanent": true },
     { "source": "/contact-2/", "destination": "/", "permanent": true },
 
